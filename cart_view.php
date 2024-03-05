@@ -31,8 +31,10 @@
 	        		</div>
 	        		<?php
 	        			if(isset($_SESSION['user'])){
+						//	<div id='paypal-button'<a href='https://buy.stripe.com/test_14keWVdxQ20B1Ak3cc'</a></div>
+
 	        				echo "
-	        					<div id='paypal-button'></div>
+								<a href='https://buy.stripe.com/test_14keWVdxQ20B1Ak3cc' class='btn btn-success'>Pay</a>
 	        				";
 	        			}
 	        			else{
@@ -157,11 +159,11 @@ function getTotal(){
 <!-- Paypal Express -->
 <script>
 paypal.Button.render({
-    env: 'sandbox', // change for production if app is live,
+    env: 'production', // change for production if app is live,
 
 	client: {
         sandbox:    'ASb1ZbVxG5ZFzCWLdYLi_d1-k5rmSjvBZhxP2etCxBKXaJHxPba13JJD_D3dTNriRbAv3Kp_72cgDvaZ',
-        //production: 'AaBHKJFEej4V6yaArjzSx9cuf-UYesQYKqynQVCdBlKuZKawDDzFyuQdidPOBSGEhWaNQnnvfzuFB9SM'
+        production: 'AaBHKJFEej4V6yaArjzSx9cuf-UYesQYKqynQVCdBlKuZKawDDzFyuQdidPOBSGEhWaNQnnvfzuFB9SM'
     },
 
     commit: true, // Show a 'Pay Now' button
