@@ -22,6 +22,7 @@
 		        				<th>Name</th>
 		        				<th>Price</th>
 		        				<th width="20%">Quantity</th>
+								<th>Size</th>
 		        				<th>Subtotal</th>
 		        			</thead>
 		        			<tbody id="tbody">
@@ -157,7 +158,7 @@ function getTotal(){
 }
 </script>
 <!-- Paypal Express -->
-<script>
+<script>x	
 paypal.Button.render({
     env: 'production', // change for production if app is live,
 
@@ -181,7 +182,7 @@ paypal.Button.render({
                     	//total purchase
                         amount: { 
                         	total: total, 
-                        	currency: 'USD' 
+                        	currency:'INR' 
                         }
                     }
                 ]

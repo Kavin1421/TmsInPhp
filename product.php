@@ -69,15 +69,33 @@
 							                <button type="button" id="add" class="btn btn-default btn-flat btn-lg"><i class="fa fa-plus"></i>
 							                </button>
 							            </span>
+										
 							            <input type="hidden" value="<?php echo $product['prodid']; ?>" name="id">
 							        </div>
+									
 			            			<button type="submit" class="btn btn-primary btn-lg btn-flat"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
-			            		</div>
+			            													<!-- Separate dropdown for sizes -->
+<div class="input-group" style="margin-top: 10px;">
+    <span class="input-group-addon" id="basic-addon1">Size:</span>
+    <select class="form-control" id="size-dropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+</div>
+								</div>
 		            		</form>
 		            	</div>
 		            	<div class="col-sm-6">
 		            		<h1 class="page-header"><?php echo $product['prodname']; ?></h1>
-		            		<h3><b>&#36; <?php echo number_format($product['price'], 2); ?></b></h3>
+		            		<h3><b>&#8377; <?php echo number_format($product['price'], 2); ?></b></h3>
 		            		<p><b>Category:</b> <a href="category.php?category=<?php echo $product['cat_slug']; ?>"><?php echo $product['catname']; ?></a></p>
 		            		<p><b>Description:</b></p>
 		            		<p><?php echo $product['description']; ?></p>
