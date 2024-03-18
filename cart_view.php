@@ -32,10 +32,10 @@
 	        		</div>
 	        		<?php
 	        			if(isset($_SESSION['user'])){
-						//	<div id='paypal-button'<a href='https://buy.stripe.com/test_14keWVdxQ20B1Ak3cc'</a></div>
+						//	 <a href='https://buy.stripe.com/test_14keWVdxQ20B1Ak3cc' class='btn btn-success'>Pay</a>
 
 	        				echo "
-								<a href='https://buy.stripe.com/test_14keWVdxQ20B1Ak3cc' class='btn btn-success'>Pay</a>
+							<div id='paypal-button'<a href='https://buy.stripe.com/test_14keWVdxQ20B1Ak3cc'</a></div>
 	        				";
 	        			}
 	        			else{
